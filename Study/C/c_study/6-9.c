@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void main() {
+
+	int hqp = 0;
+	int i, num;
+
+	printf("값 입력 : ");
+	scanf("%d", &num);
+
+	for ( i = 1; i <= num; i++ ) {
+		hqp = hqp + i;
+	}
+
+	printf (" 1에서 %d까지의 합 : %d \n", num, hqp);
+}
