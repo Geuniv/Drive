@@ -5,14 +5,14 @@ void main() {
 	int i, k;
 
 	for ( k = 2; k <= 9; k++ ) {
-		printf(  "#제%d단#  ", k);
+		printf(" #제%d단#  ", k);
 	}
 	
 	printf("\n\n");
 
 	for ( i = 1; i <= 9; i++ ) {
 		for ( k = 2; k <= 9; k++ ) {
-			printf("%2d X %1d = %2d  ", k, i, k*i );
+			printf("%2dX%2d=%2d  ", k, i, k*i );
 		}
 		printf("\n");
 	}
