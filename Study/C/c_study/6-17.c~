@@ -5,7 +5,7 @@ void main() {
 	int i, k;
 
 	for ( k = 2; k <= 9; k++ ) {
-		printf(" #제%d단# ", k);
+		printf(" #제%d단#  ", k);
 	}
 	
 	printf("\n\n");
