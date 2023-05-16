@@ -2,7 +2,8 @@
 
 void main() {
 
-	int a, b, tmp;
+	int a, b; 
+	int* tmp;
 	int* p1;
 	int* p2;
 
