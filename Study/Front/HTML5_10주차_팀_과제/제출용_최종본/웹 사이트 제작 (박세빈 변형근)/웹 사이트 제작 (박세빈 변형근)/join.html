@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link rel="stylesheet" type="text/css" href="style_join.css">
+    <link rel="stylesheet" type="text/css" href="style_navbar.css">
+</head>
+
+<body>
+    <!-- 네비게이션 바 -->
+    <nav id="nav">
+        <a href="main.html" id="logo">Culture Day</a>
+        <ul>
+            <li><a href="musical.html">뮤지컬</a></li>
+            <li><a href="concert.html">콘서트</a></li>
+            <li><a href="theater.html">연극</a></li>
+            <li><a href="md.html">MD#</a></li>
+            <li><a href="area.html">지역</a></li>
+        </ul>
+        <a href="index.html" id="loginbutton">로그인/회원가입</a>
+    </nav>
+
+    <!-- 회원가입 블록 -->
+    <div class="container" role="main">
+        <div id="content">
+            <h2>회원가입</h2>
+            <!-- 회원가입 폼 -->
+            <form name="join" method="get" action="index.html">
+
+                <div class="username">
+                    <h3 class="username_title">
+                        <label for="username">아이디</label>
+                        <input type="text" size="20" name="u_id" maxlength="10" class="inputbox">
+                        <button type="button" id="chk_duplicate">중복확인</button>
+                    </h3>
+                </div>
+
+                <div class="password">
+                    <h3 class="password_title">
+                        <label for="password">비밀번호</label>
+                        <input type="password" size="20" name="u_pass" maxlength="10" class="inputbox">
+                    </h3>
+                </div>
+
+                <div class="name">
+                    <h3 class="name_title">
+                        <label for="password">이름</label>
+                        <input type="text" size="20" name="u_name" maxlength="10" class="inputbox">
+                    </h3>
+                </div>
+
+                <div class="join_row_join_birthday">
+                    <h3 class="join_title">
+                        <label for="yy">생년월일</label>
+                        <input type="date" id="date">
+                    </h3>
+
+                </div>
+
+                <div class="gender">
+                    <h3 class="gender_title"><label for="gender">성별</label></h3>
+                    <label class="radiobutton">
+                        <input type="radio" name="radio-group" checked>남자
+                    </label>
+                    <label class="radiobutton">
+                        <input type="radio" name="radio-group">여자
+                    </label>
+                    <label class="radiobutton">
+                        <input type="radio" name="radio-group">기타
+                    </label>
+                </div>
+
+                <div class="email">
+                    <h3 class="email_title">
+                        <label for="email">이메일 주소</label>
+                        <input type="email" size="20" name="u_email" class="inputbox">
+                    </h3>
+                </div>
+
+                <div class="adress">
+                    <h3 class="adress_title">
+                        <label for="adress">주소</label>
+                        <input type="text" name="u_adress" size="20" class="inputbox">
+                    </h3>
+                </div>
+
+                <div class="submit">
+                    <button type="submit" id="joinbutton"><a href="index.html">가입하기</a></button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body></html>

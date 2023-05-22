@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지역별 주요 공연</title>
+    <link rel="stylesheet" type="text/css" href="style_navbar.css">
+    <link rel="stylesheet" type="text/css" href="style_area.css">
+</head>
+
+<body id="body">
+    <!-- 네비게이션 바 -->
+    <nav id="nav">
+        <a href="main.html" id="logo">Culture Day</a>
+        <ul>
+            <li><a href="musical.html">뮤지컬</a></li>
+            <li><a href="concert.html">콘서트</a></li>
+            <li><a href="theater.html">연극</a></li>
+            <li><a href="md.html">MD#</a></li>
+            <li><a href="area.html">지역</a></li>
+        </ul>
+        <a href="index.html" id="loginbutton">로그인/회원가입</a>
+    </nav>
+
+    <div class="big_container">
+
+        <h1 class="menu_title">지역별 주요 공연</h1>
+
+        <div id="area_container">
+            <nav id="area_nav">
+                <ul>
+                    <li><a href="seoul.html" target="in">서울</a></li>
+                    <li><a href="gyeonggi.html" target="in">경기/인천</a></li>
+                    <li><a href="daejeon.html" target="in">대전/충청/강원</a></li>
+                    <li><a href="kyungsang.html" target="in">부산/대구/울산/경상</a></li>
+                    <li><a href="jeolla.html" target="in">광주/전라</a></li>
+                    <li><a href="jeju.html" target="in">제주</a></li>
+                </ul>
+            </nav>
+
+            <area_box id="area_box">
+                <iframe src="seoul.html" name="in"></iframe>
+            </area_box>
+        </div>
+    </div>
+</body>
+
+</html>

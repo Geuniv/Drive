@@ -1,0 +1,106 @@
+body {
+    background-image: url(images/%EA%B3%B5%EC%97%B0%EC%9E%A5%ED%99%80.jpg);
+}
+
+/* 메인페이지 */
+#introduce {
+    border: 10px solid orange;
+    border-radius: 30px;
+    background-color: beige;
+    filter: opacity(0.9);
+    /* 투명도 */
+    width: 65%;
+    height: 35%;
+    position: absolute;
+    display: block;
+    top: 30%;
+    left: 15%;
+}
+
+/* 메인페이지 제목 */
+#introduce h1 {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: darkorange;
+    filter: saturate(5);
+}
+
+/* 메인페이지 소개 글 */
+#introduce div {
+    width: 96%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+/* 메인 페이지 내 모든 이미지 */
+img {
+    width: 300px;
+    height: 400px;
+    margin: auto;
+}
+
+/* 각 메뉴 아래 전체 박스 */
+div {
+    float: left;
+    margin: 50px;
+}
+
+.big_container {
+    border: 20px solid orange;
+    border-radius: 20px;
+    background-color: white;
+    filter: saturate(1.5) brightness(0.9);
+}
+
+/* 메뉴 이름 */
+.menu_title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* 메뉴 이름 아래 박스 */
+.container {
+    width: 100%;
+    margin-left: 40px;
+    padding: 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 공연 이미지 하나하나 */
+.container div {
+    float: left;
+    margin: 50px;
+    transition: all 0.5s;
+}
+
+.container div:hover {
+    transform: scale(1.1);
+}
+
+.container img {
+    width: 280px;
+    height: 400px;
+}
+
+/* Copyright */
+footer {
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 33%;
+}
+
+footer a {
+    font-family: sans-serif;
+    text-decoration-line: none;
+    color: white;
+}

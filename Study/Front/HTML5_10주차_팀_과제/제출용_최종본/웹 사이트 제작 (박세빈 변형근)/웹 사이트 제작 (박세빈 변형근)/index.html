@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" type="text/css" href="style_index.css">
+    <link rel="stylesheet" type="text/css" href="style_navbar.css">
+</head>
+
+<body>
+    <nav id="nav">
+        <a href="main.html" id="logo">Culture Day</a>
+        <ul>
+            <li><a href="musical.html">뮤지컬</a></li>
+            <li><a href="concert.html">콘서트</a></li>
+            <li><a href="theater.html">연극</a></li>
+            <li><a href="md.html">MD#</a></li>
+            <li><a href="area.html">지역</a></li>
+        </ul>
+        <a href="index.html" id="loginbutton">로그인/회원가입</a>
+    </nav>
+    <div class="container">
+        <h1>로그인</h1>
+        <form name="join" method="get" action="main.html">
+            <!-- 아이디 부분 -->
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- 비밀번호 부분 -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <br><br>
+
+            <!-- 로그인 버튼 -->
+            <button type="submit"><a href="musical.html">로그인</a></button>
+            <br>
+            <br>
+            <!-- 회원가입 버튼 -->
+            <a href="join.html" class="btn-two black button"><button type="button">회원가입</button></a>
+        </form>
+    </div>
+    <footer>
+        <div id="workers">
+            <img src="images/picture.jpg" width="400px" height="320px">
+        </div>
+        <a href="#workers">
+            Copyright (c) 2023 Culture Day Inc. All rights reserved
+        </a>
+    </footer>
+</body></html>

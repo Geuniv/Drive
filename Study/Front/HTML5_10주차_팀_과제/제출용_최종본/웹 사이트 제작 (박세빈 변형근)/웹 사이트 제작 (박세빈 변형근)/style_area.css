@@ -1,0 +1,128 @@
+#body {
+    background-image: url(images/%EA%B3%B5%EC%97%B0%EC%9E%A5%ED%99%80.jpg);
+}
+
+/* 지역별 주요 공연 페이지 지역 선택바 */
+#area_nav {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: space-between;
+    width: 1570px;
+}
+
+/* 지역별 주요 공연 페이지 지역 선택바 목록 */
+#area_nav > ul {
+    margin-left: 30px;
+    margin-right: 1px;
+    padding: 0 0;
+}
+
+/* 지역별 주요 공연 페이지 지역 선택바 목록 항목 하나하나 */
+#area_nav > ul li {
+    float: left;
+    list-style: none;
+    line-height: 50px;
+    margin: 0 10px;
+    padding: 0px 40px;
+    font-size: 15pt;
+}
+
+/* 지역별 주요 공연 페이지 지역 선택바 목록 링크 */
+#area_nav > ul li a {
+    text-decoration: none;
+    color: black;
+    border-style: hidden hidden solid hidden;
+    border-color: transparent;
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* 지역별 주요 공연 페이지 지역 선택바 목록 링크 호버 이벤트*/
+#area_nav > ul li a:hover {
+    border-color: darkorange;
+}
+
+/* 지역별 주요 공연 페이지 지역 선택바 + 지역별 iframe */
+#area_container {
+    width: 90%;
+    margin-left: 90px;
+    /**/
+
+}
+
+/* 지역별 주요 공연 페이지 지역별 iframe */
+iframe {
+    border-radius: 20px;
+    background-color: white;
+    width: 1580px;
+    height: 1000px;
+}
+
+/* 지역별 주요 공연 페이지 지역별 iframe 내 요소 */
+.area {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*---------- main.css 그대로 긁어온 거----------*/
+
+
+/* 메인 페이지 내 모든 이미지 */
+img {
+    width: 300px;
+    height: 400px;
+    margin: auto;
+}
+
+/* 메뉴 아래 전체 큰 박스 */
+div {
+    float: left;
+    margin: 50px;
+}
+
+.big_container {
+    border: 20px solid orange;
+    border-radius: 20px;
+    background-color: white;
+    filter: saturate(1.5) brightness(0.9);
+    width: 93%;
+}
+
+/* 메뉴 이름 */
+.menu_title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* 메뉴 이름 아래 박스 */
+.container {
+    width: 100%;
+    margin-left: 40px;
+    padding: 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 공연 하나하나 */
+.container div {
+    float: left;
+    margin: 50px;
+    transition: all 0.5s;
+}
+
+/* 공연 하나하나 이미지 */
+.container img {
+    width: 280px;
+    height: 400px;
+}
+
+/* 공연 하나하나 호버 이벤트 */
+.container div:hover {
+    transform: scale(1.1);
+}

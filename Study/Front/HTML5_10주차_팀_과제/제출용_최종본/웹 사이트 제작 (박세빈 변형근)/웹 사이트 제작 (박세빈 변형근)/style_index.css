@@ -1,0 +1,86 @@
+body {
+    font-family: fantasy, sans-serif;
+    background-image: url(images/%EA%B3%B5%EC%97%B0%EC%9E%A5%ED%99%80.jpg);
+}
+
+/* 로그인 박스 */
+.container {
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 30px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+/* 로그인 박스 제목 */
+h1 {
+    text-align: center;
+}
+
+/* 로그인 입력창 */
+label {
+    color: darkorange;
+    display: block;
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+
+/* 입력창 인풋 타입 */
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* 로그인 버튼, 회원가입 버튼*/
+button {
+    width: 80%;
+    padding: 10px;
+    margin-left: 35px;
+    background-color: orange;
+    filter: brightness(1);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+/* 버튼에 커서를 올려 놓았을때 바뀌는 이벤트 */
+button:hover {
+    background-color: darkorange;
+    filter: brightness(1.5);
+}
+
+form button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Copyright */
+footer {
+    text-align: center;
+}
+
+footer a {
+    font-family: sans-serif;
+    text-decoration-line: none;
+    color: aliceblue;
+}
+
+/* 작업자 사진 */
+#workers {
+    display: none;
+}
+
+#workers:target {
+    display: block;
+}

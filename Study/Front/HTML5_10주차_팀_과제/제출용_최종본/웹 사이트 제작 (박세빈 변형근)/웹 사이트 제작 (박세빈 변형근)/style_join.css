@@ -1,0 +1,113 @@
+body {
+    font-family: fantasy, sans-serif;
+    background-image: url(images/%EA%B3%B5%EC%97%B0%EC%9E%A5%ED%99%80.jpg);
+}
+
+/* 회원가입 박스 */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+/* 회원가입 박스 제목 */
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* 회원가입 입력창 라벨 */
+label {
+    color: black;
+    font-size: 12pt;
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+/* 회원가입 입력창 인풋박스 */
+.inputbox {
+    width: 75%;
+    height: 30px;
+    margin-left: 10px;
+    border: 2px solid darkorange;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* 중복확인 버튼 */
+#chk_duplicate {
+    width: 70px;
+    height: 30px;
+    margin-left: 10px;
+    padding: 1px;
+    background-color: darkorange;
+    filter: brightness(1.5);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 10pt;
+}
+
+/* 생년월일 달력 */
+#date {
+    width: 150px;
+    height: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+/* 성별 라디오버튼 */
+.radiobutton {
+    display: inline;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+/* 이메일 주소 입력창 */
+#email {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+/* 주소 입력창 */
+#address {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+/* 가입하기 버튼 */
+#joinbutton {
+    width: 100px;
+    height: 35px;
+    margin: auto 150px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkorange;
+    font-size: 12pt;
+
+}
+
+/* 가입하기 버튼 앵커 */
+form button a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
