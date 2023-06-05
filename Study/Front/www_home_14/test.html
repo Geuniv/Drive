@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta authors="임순범 박희민"/>
+<meta copyright="본 예제는 [HTML5 웹프로그래밍 입문] 교재를 이용한 교육에만 사용할 수 있음"/>
+<title> </title>
+</head>
+<body>
+ <h1>사용자 정의 함수 활용</h1>
+ <script type="text/javascript">
+    
+    function add(a,b) {
+        return (a+b);
+    }
+     
+     function sub(a,b) {
+         return (a-b);
+     }
+
+     res1 = add(10,30);
+     res2 = add(10,"30");
+     
+     document.write("res1의 결과 : " + res1 + "<br>");
+     document.write("res2의 결과 : " + res2 + "<br>");
+     document.write("두 숫자의 빼기 결과 1 : " + sub(10,20) + "<br>");
+     document.write("두 숫자의 빼기 결과 2 : " + sub(10,"20"));
+    </script>
+</body>
+</html>
