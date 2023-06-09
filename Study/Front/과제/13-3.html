@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <h1>사용자로부터 숫자 2개와 연산자를 받아 사칙연산을 하는 자바스크립트 코드</h1>
+   <script type="text/javascript">
+    
+    function add(a,b) {
+        return (a+b);
+    }
+       
+    function sub(a,b) {
+        return (a-b);
+    }
+       
+    function mul(a,b) {
+        return (a*b);
+    }
+       
+    function div(a,b) {
+        return (a/b);
+    }
+       
+    var res = 0;
+       
+    var p = prompt("첫 번째 숫자를 입력해주세요.");
+    var math = prompt("연산에 사용할 연산자를 입력해주세요. \nex) +, -, *, /");
+    var p2 = prompt("두 번째 숫자를 입력해주세요.");
+       
+    /* 받는 연산자에 따른 Swich-Case 문 */
+    switch (math) {
+        case "+" :
+            res = add(parseInt(p),parseInt(p2));
+            alert("입력받은 숫자의 합은 " + res + " 입니다.");
+            break;
+            
+        case "-" :
+            res = sub(parseInt(p),parseInt(p2));
+            alert("입력받은 숫자의 뺄셈은 " + res + " 입니다.");
+            break;
+            
+        case "*" :
+            res = mul(parseInt(p),parseInt(p2));
+            alert("입력받은 숫자의 곱은 " + res + " 입니다.");
+            break;
+            
+        case "/" :
+            res = div(parseFloat(p),parseFloat(p2));
+            alert("입력받은 숫자의 나눗셈은 " + res + " 입니다.");
+            break;
+    }
+       
+    </script>
+</body>
+</html>
