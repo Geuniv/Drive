@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>배열 객체 미션</h1>
+
+    <script type="text/javascript">
+        var arr = [];
+
+        /* 입력 받은 값으로 배열의 크기 지정 */
+        var n = prompt("배열의 크기를 지정해주세요");
+        /* 배열은 0부터 시작하기 때문에 -1을 해줌 */
+        n = parseInt(n - 1);
+
+        /* 입력받은 문자를 배열에 대입 */
+        for (var i = 0; i <= n; i++) {
+            var input = prompt("여러 개의 단어를 입력해주세요");
+            arr[i] = input;
+        }
+        
+        /* 배열의 크기 출력 */
+        document.write("배열의 크기 : " + arr.length  + "<br><br>");
+        
+        /* ------------------------------------------------- */
+
+        /* 오름차순 정렬 */
+        document.write("오름차순 정렬..." + "<br><br>");
+        var sort = arr.sort();
+        
+        document.write("배열의 내용 : " + "<br>");
+        
+        for (var i = 0; i < arr.length; i++) {
+            document.write("word_array[" + i + "] : " + arr[i] + "<br>");
+        }
+        document.write("<br>");
+        
+        /* -------------------------------------------------- */
+
+        /* 내림차순 정렬 */
+        document.write("내림차순 정렬..." + "<br><br>");
+        var srrv = sort.reverse();
+        
+        document.write("배열의 내용 : " + "<br>");
+        
+        for (var i = 0; i < arr.length ; i++) {
+            document.write("word_array[" + i + "] : " + srrv[i] + "<br>");
+        }
+    </script>
+
+</body></html>
