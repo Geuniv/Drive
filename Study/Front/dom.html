@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>연습입니다.</h1>
+    <form>
+        과목명 : <input type = "text" id = "test" size = "20">
+            <br>
+        수강시간 : <input type = "text" id = "time" size = "20">시간
+    </form>
+    <h1>검토합니다.</h1>
+    <script type="text/javascript">
+    
+        /* 객체 */
+        var dom = document.getElementById("test");
+        var newV = prompt("과목명을 입력하세요.", "");
+        dom.value = newV;
+        
+        var dom = document.getElementById("time");
+        var newT = prompt("시간을 입력하세요.", "");
+        dom.value = newT;
+        
+        var h1T = document.getElementsByTagName("h1");
+        h1T[0].innerHTML = "<h2> 결과를 확인하세요 </h2>";
+        h1T[1].innerText = "<h2> 결과를 확인하세요 </h2>";
+    </script>
+</body>
+</html>
