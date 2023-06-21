@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Window 객체 활용</h1>
+    <script type="text/javascript">
+    
+        var win;
+        function open_win() {
+            var url = prompt("url을 입력하세요", "http://");
+            if (url) win = window.open(url);
+        }
+        
+        
+    </script>
+<!-- window도 navigator도 전부 최상위 객체 -->
+    
+<!-- open_win() -> 윈도우 핸들러 ? 이벤트 핸들러 ? -->
+<button onclick="open_win();">새창에서 url 열기</button>
+<!-- 값을 받아서 open한 윈도우를 닫는 키임 -->
+<button onclick="win.close();">창 닫기</button>
+</body>
+</html>
