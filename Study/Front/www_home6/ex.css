@@ -1,0 +1,43 @@
+        /* 태그 선택자 */
+        strong{
+            color: red;
+        }
+        
+        /* 클래스 선택자 */
+        .ex{
+            color: blue;
+            background-color: chartreuse;
+        }
+        
+        /* 아이디 선택자 */
+        #main{
+            color: darkkhaki;
+        }
+        
+        /* 가상클래스 선택자 */
+        a:link{
+            color: darkred;
+        }
+        
+        a:visited{
+            color: cyan;
+        }
+        
+        a:hover{
+            color: aliceblue;
+            background-color: black;
+        }
+
+
+p{
+    font-family: "궁서체", "굴림체";
+    font-size: 20pt;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 40pt;
+}
+
+h3{
+    text-align: center;
+    text-shadow: 3pt 3pt 4pt cyan;
+}
